@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:left">
+    <h2>Welcome using dbWatcher</h2>
+    <form #userForm="ngForm">
+        <div class="form-group">
+            <div>
+                Parameter1: <input name="param1" ngModel>
+            </div>
+            <div>
+                Parameter2: <input name="param2" ngModel>
+            </div>
+            <div>
+                Parameter3: <input name="param3" ngModel>
+            </div>
+            <div>
+                <button class="btn-primary" (click)="onFormSubmit(userForm)">Submit</button>
+                <button type="button" (click)="resetUserForm(userForm)">Reset</button>
+            </div>
+        </div>
+    </form>
+</div>

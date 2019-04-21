@@ -1,0 +1,2 @@
+rootProject.name = 'myapp5'
+include 'dbwatcher-api', 'dbwatcher-ui', 'dbwatcher-db-config'

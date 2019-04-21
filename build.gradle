@@ -1,0 +1,19 @@
+plugins {
+    id 'distribution'
+}
+
+allprojects {
+    group = 'com.dbwatcher'
+    version = '0.0.1-SNAPSHOT'
+}
+
+distributions {
+    main {
+        baseName = 'mydbwatcher'
+        contents {
+            from 'dbwatcher-api/build/libs/dbwatcher-1.0.0-SNAPSHOT.jar'
+	    from 'dbwatcher-db-config/build/libs/dbwatcher-db-config-0.0.1-SNAPSHOT.jar'
+            from './startit.ps1'
+        }
+    }
+}
